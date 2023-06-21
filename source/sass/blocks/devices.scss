@@ -1,0 +1,13 @@
+.devices__container {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  align-items: center;
+}
+
+.devices__content {
+  padding-right: 50px;
+}
+
+.devices__text {
+  margin-bottom: 42px;
+}

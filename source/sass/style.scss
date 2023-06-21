@@ -11,8 +11,19 @@
 @import "global/fonts";
 @import "global/reboot";
 @import "global/utils";
+@import "global/container";
 
 // Blocks
 // ---------------------------------
 
 @import "blocks/page";
+@import "blocks/header.scss";
+@import "blocks/profile.scss";
+@import "blocks/market.scss";
+@import "blocks/button.scss";
+@import "blocks/features.scss";
+@import "blocks/feature.scss";
+@import "blocks/devices.scss";
+@import "blocks/faq.scss";
+@import "blocks/footer.scss";
+@import "blocks/apps.scss";

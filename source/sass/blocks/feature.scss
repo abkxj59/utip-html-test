@@ -1,0 +1,33 @@
+.feature {
+  padding: 44px 32px 34px;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature__title {
+  margin: 10px 0;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.feature__text {
+  margin-top: 0;
+}
+
+.feature__icon {
+  margin-top: auto;
+}
+
+.feature--main {
+  position: relative;
+
+  .feature__icon {
+    margin-top: 40px;
+  }
+
+  .feature__main-pic {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+  }
+}

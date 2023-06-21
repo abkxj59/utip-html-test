@@ -1,0 +1,19 @@
+.market {
+  padding: 63px 0 56px;
+}
+
+.market__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.market__content {
+  padding-right: 200px;
+}
+
+.market__text {
+  margin-bottom: 32px;
+  line-height: 28px;
+}

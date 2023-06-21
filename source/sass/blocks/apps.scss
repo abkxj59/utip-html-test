@@ -1,0 +1,33 @@
+.apps {
+  display: flex;
+}
+
+.apps__heading {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.apps__list {
+  display: flex;
+  padding-left: 12px;
+  list-style: none;
+}
+
+.apps__item {
+  margin-right: 20px;
+}
+
+.apps__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 3px;
+  background-color: $color-default-white;
+  transition: $trans-default;
+
+  @include hover-focus {
+    background-color: $color-basic-cyan;
+  }
+}

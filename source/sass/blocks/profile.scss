@@ -1,0 +1,45 @@
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile__language-selector {
+  list-style: none;
+}
+
+.profile__language-item {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+
+  &--checked {
+    display: flex;
+    align-items: center;
+
+    &::after {
+      margin-left: 6px;
+      content: "";
+      background-image: url("../img/svg/arrow.svg");
+      width: 15px;
+      height: 10px;
+    }
+  }
+}
+
+.profile__sign-in-button {
+  padding: 14px 26px;
+  margin-left: 40px;
+  border: 1.5px solid $color-default-white;
+  border-radius: 3px;
+  background: none;
+  color: $color-default-white;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.8;
+  transition: $trans-default;
+
+  @include hover-focus {
+    opacity: 1;
+  }
+}

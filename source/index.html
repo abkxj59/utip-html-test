@@ -20,7 +20,9 @@
 <body class="page__body">
   <header class="page__header header">
     <a href="#" class="header__logo">
-      <img src="img/svg/logo.svg" width="100" height="102" alt="United Brokers Logo">
+      <svg width="100" height="102">
+        <use xlink:href="img/sprite.svg#logo"></use>
+      </svg>
     </a>
     <nav class="header__nav">
       <ul class="header__nav-list">
@@ -28,7 +30,7 @@
           <a href="#">Торговля</a>
         </li>
         <li class="header__nav-item header__nav-item--current">
-          <a href="#">Рынки</a>
+          <a>Рынки</a>
         </li>
         <li class="header__nav-item">
           <a href="#">Клиентам</a>
@@ -49,7 +51,7 @@
 
   <main class="page__main">
     <section class="page__section market">
-      <div class="container">
+      <div class="container market__container">
         <div class="market__content">
           <h2 class="page__heading market__heading">Криптовалютный рынок</h2>
           <p class="market__text">Торгуйте криптовалютами на&nbsp;мировом финансовом рынке на&nbsp;конкурентоспособных условиях.</p>
@@ -69,17 +71,17 @@
           <li class="features__item feature">
             <h4 class="feature__title">Сверхбыстрое исполнение и&nbsp;высокая ликвидность</h4>
             <p class="feature__text">99,9% ордеров исполняются менее чем за&nbsp;11.06&nbsp;мс</p>
-            <svg width="27" height="30">
+            <svg class="feature__icon" width="27" height="30">
               <use xlink:href="img/sprite.svg#stopwatch"></use>
             </svg>
           </li>
-          <li class="features__item feature feature--main">
+          <li class="features__item features__item--main feature feature--main">
             <h4 class="feature__title">Типы счетов</h4>
             <p class="feature__text">
               Возможность торговать<br>
               Mini, Standard, Classic и&nbsp;ProInvest счетами с&nbsp;одного устройства
             </p>
-            <svg width="32" height="32">
+            <svg class="feature__icon" width="32" height="32">
               <use xlink:href="img/sprite.svg#candles"></use>
             </svg>
             <picture>
@@ -90,21 +92,21 @@
           <li class="features__item feature">
             <h4 class="feature__title">Мировые стандарты безопасности</h4>
             <p class="feature__text">Выбирайте надежного брокера, который работает с&nbsp;клиентами более чем в&nbsp;83&nbsp;странах мира</p>
-            <svg width="30" height="32">
+            <svg class="feature__icon" width="30" height="32">
               <use xlink:href="img/sprite.svg#shield"></use>
             </svg>
           </li>
           <li class="features__item feature">
             <h4 class="feature__title">150+ инструментов</h4>
             <p class="feature__text">Forex, акции, фьючерсы, индексы, металлы и&nbsp;энергоресурсы</p>
-            <svg width="30" height="32">
+            <svg class="feature__icon" width="30" height="32">
               <use xlink:href="img/sprite.svg#bars"></use>
             </svg>
           </li>
           <li class="features__item feature">
             <h4 class="feature__title">Мультиязычная поддержка 24/5</h4>
             <p class="feature__text">Почувствуйте себя уверенно, зная, что наша служба поддержки доступна для вас в&nbsp;любое время дня и&nbsp;ночи, с&nbsp;понедельника по&nbsp;пятницу</p>
-            <svg width="30" height="32">
+            <svg class="feature__icon" width="30" height="32">
               <use xlink:href="img/sprite.svg#headphones"></use>
             </svg>
           </li>
@@ -113,7 +115,7 @@
     </section>
 
     <section class="page__section devices">
-      <div class="container">
+      <div class="container devices__container">
         <div class="devices__content">
           <h3 class="page__section-heading devices__heading">Выберите свою платформу</h3>
           <p class="devices__text">Переходите на&nbsp;новый уровень трейдинга с&nbsp;профессионально оснащенной платформой &laquo;United Brokers&raquo;. Доступны версии для&nbsp;ПК, веб и&nbsp;смартфонов.</p>
@@ -129,8 +131,8 @@
     <section class="page__section faq">
       <div class="container">
         <h3 class="page__section-heading faq__heading">Вопросы и ответы</h3>
-        <ul class="faq__list accordion accordion--nojs">
-          <li class="faq__item accordion__item accordion__item--opened">
+        <ul class="faq__list faq__list--nojs accordion accordion--nojs">
+          <li class="faq__item faq__item--opened accordion__item accordion__item--opened">
             <div class="faq__header">
               <h4 class="faq__question">Что такое криптовалюты?</h4>
               <button type="button" class="faq__checkbox"></button>
@@ -154,7 +156,9 @@
     <div class="container">
       <div class="footer__top">
         <a class="footer__logo" href="#">
-          <img src="img/svg/footer-logo.svg" width="84" height="100" alt="logo">
+          <svg width="84" height="100">
+            <use xlink:href="img/sprite.svg#footer-logo"></use>
+          </svg>
         </a>
         <div class="footer__apps apps">
           <h5 class="apps__heading">Скачать приложение United Brokers:</h5>
