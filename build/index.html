@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>UTIP test</title>
+  <meta name="description" content="Решение тестового задания на вакансию HTML-верстальщик в компанию UTIP">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="preload" href="fonts/Inter-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Inter-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Inter-SemiBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Inter-Bold.woff2" as="font" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicon/favicon-16x16.png">
+  <link rel="icon" href="favicon/favicon-32x32.png">
+</head>
+<body class="page__body">
+  <header class="page__header header">
+    <a href="#" class="header__logo">
+      <img src="img/svg/logo.svg" width="100" height="102" alt="United Brokers Logo">
+    </a>
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a href="#">Торговля</a>
+        </li>
+        <li class="header__nav-item header__nav-item--current">
+          <a href="#">Рынки</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#">Клиентам</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#">О нас</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__profile profile">
+      <ul class="profile__language-selector">
+        <li class="profile__language-item profile__language-item--checked">RU</li>
+        <li class="profile__language-item">EN</li>
+      </ul>
+      <button type="button" class="profile__sign-in-button">Войти</button>
+    </div>
+  </header>
+
+  <main class="page__main">
+    <section class="page__section market">
+      <div class="container">
+        <div class="market__content">
+          <h2 class="page__heading market__heading">Криптовалютный рынок</h2>
+          <p class="market__text">Торгуйте криптовалютами на&nbsp;мировом финансовом рынке на&nbsp;конкурентоспособных условиях.</p>
+          <a href="#" class="market__button button">Открыть счет</a>
+        </div>
+        <picture>
+          <source type="image/webp" srcset="img/coin.webp 1x, img/coin@2x.webp 2x">
+          <img class="market__coin" src="img/coin.png" srcset="img/coin@2x.png 2x" width="546" height="549" alt="coin">
+        </picture>
+      </div>
+    </section>
+
+    <section class="page__section features">
+      <div class="container">
+        <h3 class="page__section-heading features__heading">Преимущества торговли с&nbsp;&laquo;United Brokers&raquo;</h3>
+        <ul class="features__list">
+          <li class="features__item feature">
+            <h4 class="feature__title">Сверхбыстрое исполнение и&nbsp;высокая ликвидность</h4>
+            <p class="feature__text">99,9% ордеров исполняются менее чем за&nbsp;11.06&nbsp;мс</p>
+            <svg width="27" height="30">
+              <use xlink:href="img/sprite.svg#stopwatch"></use>
+            </svg>
+          </li>
+          <li class="features__item feature feature--main">
+            <h4 class="feature__title">Типы счетов</h4>
+            <p class="feature__text">
+              Возможность торговать<br>
+              Mini, Standard, Classic и&nbsp;ProInvest счетами с&nbsp;одного устройства
+            </p>
+            <svg width="32" height="32">
+              <use xlink:href="img/sprite.svg#candles"></use>
+            </svg>
+            <picture>
+              <source type="image/webp" srcset="img/workstation.webp 1x, img/workstation@2x.webp 2x">
+              <img class="feature__main-pic" src="img/workstation.png" srcset="img/workstation@2x.png 2x" width="363" height="374" alt="workstation">
+            </picture>
+          </li>
+          <li class="features__item feature">
+            <h4 class="feature__title">Мировые стандарты безопасности</h4>
+            <p class="feature__text">Выбирайте надежного брокера, который работает с&nbsp;клиентами более чем в&nbsp;83&nbsp;странах мира</p>
+            <svg width="30" height="32">
+              <use xlink:href="img/sprite.svg#shield"></use>
+            </svg>
+          </li>
+          <li class="features__item feature">
+            <h4 class="feature__title">150+ инструментов</h4>
+            <p class="feature__text">Forex, акции, фьючерсы, индексы, металлы и&nbsp;энергоресурсы</p>
+            <svg width="30" height="32">
+              <use xlink:href="img/sprite.svg#bars"></use>
+            </svg>
+          </li>
+          <li class="features__item feature">
+            <h4 class="feature__title">Мультиязычная поддержка 24/5</h4>
+            <p class="feature__text">Почувствуйте себя уверенно, зная, что наша служба поддержки доступна для вас в&nbsp;любое время дня и&nbsp;ночи, с&nbsp;понедельника по&nbsp;пятницу</p>
+            <svg width="30" height="32">
+              <use xlink:href="img/sprite.svg#headphones"></use>
+            </svg>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="page__section devices">
+      <div class="container">
+        <div class="devices__content">
+          <h3 class="page__section-heading devices__heading">Выберите свою платформу</h3>
+          <p class="devices__text">Переходите на&nbsp;новый уровень трейдинга с&nbsp;профессионально оснащенной платформой &laquo;United Brokers&raquo;. Доступны версии для&nbsp;ПК, веб и&nbsp;смартфонов.</p>
+          <a href="#" class="devices__button button">Подробнее</a>
+        </div>
+        <picture>
+          <source type="image/webp" srcset="img/devices.webp 1x, img/devices@2x.webp 2x">
+          <img class="devices__pic" src="img/devices.png" srcset="img/devices@2x.png 2x" width="782" height="430" alt="devices">
+        </picture>
+      </div>
+    </section>
+
+    <section class="page__section faq">
+      <div class="container">
+        <h3 class="page__section-heading faq__heading">Вопросы и ответы</h3>
+        <ul class="faq__list accordion accordion--nojs">
+          <li class="faq__item accordion__item accordion__item--opened">
+            <div class="faq__header">
+              <h4 class="faq__question">Что такое криптовалюты?</h4>
+              <button type="button" class="faq__checkbox"></button>
+            </div>
+            <p class="faq__answer"><b>Криптовалюты</b>&nbsp;&mdash; относительно недавно возникшее явление в&nbsp;финансовом мире, стремительно набирающее популярность. Это цифровые деньги, в&nbsp;основе которых лежит децентрализованная открытая база&nbsp;&mdash; блокчейн, функционирующая на&nbsp;основе криптографических методов. Криптовалюты не&nbsp;имеют физического облика, они существуют лишь в&nbsp;электронном виде.</p>
+          </li>
+          <li class="faq__item accordion__item">
+            <div class="faq__header">
+              <h4 class="faq__question">Основные преимущества криптовалют</h4>
+              <button type="button" class="faq__checkbox"></button>
+            </div>
+            <p class="faq__answer">Среди преимуществ криптовалют Роман Некрасов назвал скорость и&nbsp;дешевизну транзакций (особенно при переводе крупных сумм), отсутствие барьеров на&nbsp;трансграничные переводы, а&nbsp;также полное владение активом. Эксперт добавил, что ни&nbsp;один регулятор не&nbsp;сможет лишить инвестора криптовалюты, как это может произойти с&nbsp;фиатными деньгами в&nbsp;случае заморозки счетов в&nbsp;банках.</p>
+          </li>
+        </ul>
+        <a href="#" class="faq__button button">Начать торговать</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page__footer footer">
+    <div class="container">
+      <div class="footer__top">
+        <a class="footer__logo" href="#">
+          <img src="img/svg/footer-logo.svg" width="84" height="100" alt="logo">
+        </a>
+        <div class="footer__apps apps">
+          <h5 class="apps__heading">Скачать приложение United Brokers:</h5>
+          <ul class="apps__list">
+            <li class="apps__item">
+              <a class="apps__link" href="#">
+                <svg width="23" height="23">
+                  <use xlink:href="img/sprite.svg#icon-pc"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="apps__item">
+              <a class="apps__link" href="#">
+                <svg width="23" height="23">
+                  <use xlink:href="img/sprite.svg#icon-terminal"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="apps__item">
+              <a class="apps__link" href="#">
+                <svg width="23" height="23">
+                  <use xlink:href="img/sprite.svg#icon-apple"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="apps__item">
+              <a class="apps__link" href="#">
+                <svg width="23" height="23">
+                  <use xlink:href="img/sprite.svg#icon-google-play"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__contacts">
+          <a href="tel:+79002229999">+7 (900) 222-99-99</a>
+          <a href="mailto:info@unitedbrokers.io">info@unitedbrokers.io</a>
+        </div>
+        <a href="#" class="footer__profile-button button">Личный кабинет</a>
+      </div>
+      <nav class="footer__nav">
+        <ul class="footer__nav-column">
+          <li class="footer__nav-item"><a href="#">Торговля</a></li>
+          <li class="footer__nav-item"><a href="#">Платформы</a></li>
+          <li class="footer__nav-item"><a href="#">Типы счетов</a></li>
+          <li class="footer__nav-item"><a href="#">Условия торговли</a></li>
+        </ul>
+        <ul class="footer__nav-column">
+          <li class="footer__nav-item"><a href="#">Рынки</a></li>
+          <li class="footer__nav-item"><a href="#">Валютный рынок</a></li>
+          <li class="footer__nav-item"><a href="#">Фондовый рынок</a></li>
+          <li class="footer__nav-item"><a href="#">Товарный рынок</a></li>
+          <li class="footer__nav-item"><a href="#">Индексы</a></li>
+          <li class="footer__nav-item"><a href="#">Криптовалюты</a></li>
+        </ul>
+        <ul class="footer__nav-column">
+          <li class="footer__nav-item"><a href="#">Клиентам</a></li>
+          <li class="footer__nav-item"><a href="#">Аналитика</a></li>
+          <li class="footer__nav-item"><a href="#">Новости</a></li>
+          <li class="footer__nav-item"><a href="#">Обучение</a></li>
+          <li class="footer__nav-item"><a href="#">Советы трейдерам</a></li>
+          <li class="footer__nav-item"><a href="#">Программа лояльности</a></li>
+        </ul>
+        <ul class="footer__nav-column">
+          <li class="footer__nav-item"><a href="#">О нас</a></li>
+          <li class="footer__nav-item"><a href="#">О компании</a></li>
+          <li class="footer__nav-item"><a href="#">Контакты</a></li>
+          <li class="footer__nav-item"><a href="#">Документы</a></li>
+          <li class="footer__nav-item"><a href="#">Сохранность средств</a></li>
+          <li class="footer__nav-item"><a href="#">Вакансии</a></li>
+        </ul>
+        <ul class="footer__nav-column footer__nav-column--docs">
+          <li class="footer__nav-item"><a href="#">Документы</a></li>
+          <li class="footer__nav-item"><a href="#">Клиентское соглашение</a></li>
+          <li class="footer__nav-item"><a href="#">Политика конфиденциальности</a></li>
+          <li class="footer__nav-item"><a href="#">Политика возврата платежей</a></li>
+          <li class="footer__nav-item"><a href="#">Свидетельство о регистрации</a></li>
+          <li class="footer__nav-item"><a href="#">Политика AML</a></li>
+        </ul>
+      </nav>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy;&nbsp;United Brokers 2021. Все права защищены. Любое использование материалов сайта без разрешения запрещено.</p>
+        <p class="footer__warning">
+          Уведомление о&nbsp;рисках:<br>
+          Инвестирование в&nbsp;группы высокого риска: (Forex) и&nbsp;контрактами на&nbsp;разницу (CFD) является спекулятивной операцией, включая высокий риск, и&nbsp;не&nbsp;подходит для каждого инвестора. Вы&nbsp;можете понести как частичные, так и&nbsp;полные потери вложенных средств, поэтому мы&nbsp;не&nbsp;советуем инвестировать капитал, которым вы&nbsp;не&nbsp;можете рисковать. Вы&nbsp;должны знать о&nbsp;повышенном риске, связанном с&nbsp;использованием кредитного плеча. Мы&nbsp;настоятельно рекомендуем вам ознакомиться с&nbsp;условиями и&nbsp;услугами нашего веб-сайта, прежде чем начать пользоваться нашим сервисом.
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="js/main.min.js"></script>
+</body>
+</html>

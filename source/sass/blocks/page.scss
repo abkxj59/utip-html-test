@@ -1,0 +1,20 @@
+.page__body {
+  padding: 40px 0;
+  position: relative;
+  overflow-x: hidden;
+
+  @include vp-768 {
+    padding: 10px 0;
+  }
+}
+
+.page__background {
+  position: fixed;
+  top: 0;
+  object-fit: cover;
+  object-position: 55%;
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+  min-height: 100vh;
+}
