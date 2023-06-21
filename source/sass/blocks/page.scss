@@ -1,6 +1,7 @@
 .page__body {
   position: relative;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .page__section {

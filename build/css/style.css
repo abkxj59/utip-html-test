@@ -593,6 +593,7 @@ button,
 .page__body {
   position: relative;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .page__section {
@@ -685,16 +686,47 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
+  padding-left: 50px;
 }
 
 .profile__language-selector {
+  position: absolute;
+  top: 0;
+  left: 0;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 3px;
+  border: 1.5px solid rgba(255, 255, 255, 0);
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.profile__language-selector--nojs {
+  display: none;
+}
+
+.profile__language-selector.focus-visible:focus {
+  border: 1.5px solid rgba(29, 170, 179, 0.7);
+}
+
+.profile__language-selector--opened {
+  border: 1.5px solid #1DAAB3;
+  background-color: #1DAAB3;
 }
 
 .profile__language-item {
+  cursor: pointer;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+  display: none;
+  padding: 14px;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .profile__language-item--checked {
@@ -712,6 +744,26 @@ button,
   background-image: url("../img/svg/arrow.svg");
   width: 15px;
   height: 10px;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.profile__language-selector--opened .profile__language-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profile__language-selector--opened .profile__language-item--checked::after {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.profile__language-selector--opened .profile__language-item.focus-visible:focus {
+  background-color: #ffffff;
+  color: #1DAAB3;
 }
 
 .profile__sign-in-button {
@@ -869,6 +921,18 @@ button,
 
 .faq__item {
   padding: 19px 30px;
+  cursor: pointer;
+  border-bottom: 1px solid #D8D8D8;
+}
+
+.faq__item:last-child {
+  border: none;
+}
+
+.faq__item.focus-visible:focus .faq__checkbox {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
 }
 
 .faq__header {
@@ -902,6 +966,9 @@ button,
   border: none;
   position: relative;
   background-color: #F4F4F4;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .faq__checkbox::before {
@@ -1090,6 +1157,15 @@ button,
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
   }
 
+  .profile__language-selector:hover:not(.focus-visible) {
+    border: 1.5px solid rgba(29, 170, 179, 0.7);
+  }
+
+  .profile__language-selector--opened .profile__language-item:hover:not(.focus-visible) {
+    background-color: #ffffff;
+    color: #1DAAB3;
+  }
+
   .profile__sign-in-button:hover:not(.focus-visible) {
     opacity: 1;
   }
@@ -1098,6 +1174,12 @@ button,
     background-color: rgba(255, 255, 255, 0);
     outline: 1.5px solid #1DAAB3;
     color: #1DAAB3;
+  }
+
+  .faq__item:hover:not(.focus-visible) .faq__checkbox {
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
   }
 
   .footer__logo:hover:not(.focus-visible) {
