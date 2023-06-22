@@ -3,6 +3,11 @@
   background-color: $color-default-white;
   padding: 0;
   margin-bottom: 32px;
+
+  @include vp-1280 {
+    margin-right: -5px;
+    margin-bottom: 20px;
+  }
 }
 
 .faq__item {
@@ -16,9 +21,18 @@
 
   @include hover-focus {
     .faq__checkbox {
-      background-color: $color-default-white;
+      background-color: $color-basic-cyan;
       box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+
+      &::after,
+      &::before {
+        background-color: $color-default-white;
+      }
     }
+  }
+
+  @include vp-1280 {
+    padding: 30px;
   }
 }
 
@@ -33,9 +47,15 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 52px;
+
+  @include vp-1280 {
+    font-size: 18px;
+    line-height: 32px;
+  }
 }
 
 .faq__checkbox {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,6 +95,10 @@
   display: none;
   line-height: 28px;
   margin: 17px 0 10px;
+
+  @include vp-1280 {
+    margin: 42px 0 10px;
+  }
 }
 
 .faq__item--opened .faq__answer {
@@ -83,4 +107,11 @@
 
 .faq__list--nojs .faq__answer {
   display: block;
+}
+
+.faq__button {
+  @include vp-1280 {
+    font-size: 16px;
+    padding: 13px 29px;
+  }
 }

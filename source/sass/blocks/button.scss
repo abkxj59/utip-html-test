@@ -13,4 +13,8 @@
     outline: 1.5px solid $color-basic-cyan;
     color: $color-basic-cyan;
   }
+
+  @include vp-1280 {
+    padding: 8px 40px;
+  }
 }

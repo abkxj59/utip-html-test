@@ -10,6 +10,10 @@
   &:nth-child(even) {
     background-color: $color-background-grey;
   }
+
+  @include vp-1280 {
+    padding: 56px 0;
+  }
 }
 
 .page__heading {
@@ -17,6 +21,12 @@
   font-weight: 500;
   font-size: 40px;
   line-height: 55px;
+
+  @include vp-1280 {
+    margin: 0 0 4px;
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 
 .page__section-heading {
@@ -24,4 +34,32 @@
   font-weight: 500;
   font-size: 32px;
   line-height: 32px;
+
+  @include vp-1280 {
+    font-size: 24px;
+    margin: 0 0 39px;
+  }
+}
+
+.page__overlay {
+  position: fixed;
+  border: none;
+  display: block;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  background-color: #002b66;
+}
+
+.page__body--menu-is-opened .page__overlay {
+  pointer-events: auto;
+  opacity: 0.5;
+  height: 100%;
 }

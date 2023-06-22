@@ -1,5 +1,10 @@
 .market {
   padding: 63px 0 56px;
+
+  @include vp-1280 {
+    padding: 107px 0 88px;
+
+  }
 }
 
 .market__container {
@@ -7,22 +12,51 @@
   grid-template-columns: 1fr 1fr;
   gap: 32px;
   align-items: center;
+
+  @include vp-1280 {
+    position: relative;
+    grid-template-columns: 2fr 1fr;
+    gap: 0;
+  }
 }
 
 .market__content {
   padding-right: 150px;
   margin-top: -33px;
+
+  @include vp-1280 {
+    margin-top: 0;
+    padding-right: 0;
+  }
 }
 
 .market__text {
   margin-bottom: 32px;
   line-height: 28px;
+
+  @include vp-1280 {
+    margin: 4px 0 8px;
+    line-height: 24px;
+  }
 }
 
 .market__coin {
   margin-left: 18px;
+
+  @include vp-1280 {
+    width: 250px;
+    object-fit: cover;
+    position: absolute;
+    top: -15px;
+    right: 52px;
+
+  }
 }
 
 .market__button {
   padding: 14px 34px;
+
+  @include vp-1280 {
+    padding: 8px 30px;
+  }
 }

@@ -20,6 +20,7 @@ $color-background-grey:  #F4F4F4;
 
 // переменная используемая в html для подключения скейлинга
 $fz-default:                        16px;
+$fz-tablet:                         14px;
 
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
@@ -30,6 +31,7 @@ $ff-inter: "Inter", "Arial", sans-serif;
 // Typography
 // ---------------------------------
 
+$border-default: 1px solid $color-dark-grey;
 $shadow-default: 2px 2px 15px rgba(0, 0, 0, 0.1);
 $light-shadow: 0 0 8px rgba($color-default-white, 0.3);
 
