@@ -24,7 +24,7 @@
         <use xlink:href="img/sprite.svg#logo"></use>
       </svg>
     </a>
-    <nav class="header__nav">
+    <nav class="header__nav header__nav--nojs">
       <ul class="header__nav-list">
         <li class="header__nav-item">
           <a href="#">Торговля</a>
@@ -40,6 +40,11 @@
         </li>
       </ul>
     </nav>
+    <button type="button" class="header__nav-button">
+      <svg width="28" height="25">
+        <use xlink:href="img/sprite.svg#burger"></use>
+      </svg>
+    </button>
     <div class="header__profile profile">
       <ul class="profile__language-selector profile__language-selector--nojs">
         <li class="profile__language-item profile__language-item--checked">RU</li>
@@ -123,10 +128,12 @@
           <p class="devices__text">Переходите на&nbsp;новый уровень трейдинга с&nbsp;профессионально оснащенной платформой &laquo;United Brokers&raquo;. Доступны версии для&nbsp;ПК, веб и&nbsp;смартфонов.</p>
           <a href="#" class="devices__button button">Подробнее</a>
         </div>
-        <picture>
-          <source type="image/webp" srcset="img/devices.webp 1x, img/devices@2x.webp 2x">
-          <img class="devices__pic" src="img/devices.png" srcset="img/devices@2x.png 2x" width="782" height="430" alt="devices">
-        </picture>
+        <div class="devices__pic-wrapper">
+          <picture>
+            <source type="image/webp" srcset="img/devices.webp 1x, img/devices@2x.webp 2x">
+            <img class="devices__pic" src="img/devices.png" srcset="img/devices@2x.png 2x" width="782" height="430" alt="devices">
+          </picture>
+        </div>
       </div>
     </section>
 
@@ -155,7 +162,7 @@
   </main>
 
   <footer class="page__footer footer">
-    <div class="container">
+    <div class="container footer__container">
       <div class="footer__top">
         <a class="footer__logo" href="#">
           <svg width="84" height="100">
@@ -195,10 +202,6 @@
             </li>
           </ul>
         </div>
-        <div class="footer__contacts">
-          <a href="tel:+79002229999">+7 (900) 222-99-99</a>
-          <a href="mailto:info@unitedbrokers.io">info@unitedbrokers.io</a>
-        </div>
         <a href="#" class="footer__profile-button button">Личный кабинет</a>
       </div>
       <nav class="footer__nav">
@@ -232,6 +235,11 @@
           <li class="footer__nav-item"><a href="#">Сохранность средств</a></li>
           <li class="footer__nav-item"><a href="#">Вакансии</a></li>
         </ul>
+        <ul class="footer__nav-column footer__nav-column--contacts">
+          <li class="footer__nav-item"><a href="#">Контакты</a></li>
+          <li class="footer__nav-item"><a href="tel:+79002229999">+7 (900) 222-99-99</a></li>
+          <li class="footer__nav-item"><a href="mailto:info@unitedbrokers.io">info@unitedbrokers.io</a></li>
+        </ul>
         <ul class="footer__nav-column footer__nav-column--docs">
           <li class="footer__nav-item"><a href="#">Документы</a></li>
           <li class="footer__nav-item"><a href="#">Клиентское соглашение</a></li>
@@ -250,6 +258,7 @@
       </div>
     </div>
   </footer>
+  <div class="page__overlay"></div>
   <script type="module" src="js/main.min.js"></script>
 </body>
 </html>
