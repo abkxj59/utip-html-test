@@ -12,6 +12,7 @@
   <link rel="preload" href="fonts/Inter-Bold.woff2" as="font" crossorigin="anonymous">
 
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicon/favicon-16x16.png">
@@ -72,52 +73,55 @@
     <section class="page__section features">
       <div class="container">
         <h3 class="page__section-heading features__heading">Преимущества торговли с&nbsp;&laquo;United Brokers&raquo;</h3>
-        <ul class="features__list">
-          <li class="features__item feature">
-            <h4 class="feature__title">Сверхбыстрое исполнение и&nbsp;высокая ликвидность</h4>
-            <p class="feature__text">
-              99,9% ордеров исполняются<br>
-              менее чем за&nbsp;11.06&nbsp;мс</p>
-            <svg class="feature__icon" width="27" height="30">
-              <use xlink:href="img/sprite.svg#stopwatch"></use>
-            </svg>
-          </li>
-          <li class="features__item features__item--main feature feature--main">
-            <h4 class="feature__title">Типы счетов</h4>
-            <p class="feature__text">
-              Возможность торговать<br>
-              Mini, Standard, Classic и&nbsp;ProInvest счетами с&nbsp;одного&nbsp;устройства
-            </p>
-            <svg class="feature__icon" width="32" height="32">
-              <use xlink:href="img/sprite.svg#candles"></use>
-            </svg>
-            <picture>
-              <source type="image/webp" srcset="img/workstation.webp 1x, img/workstation@2x.webp 2x">
-              <img class="feature__main-pic" src="img/workstation.png" srcset="img/workstation@2x.png 2x" width="363" height="374" alt="workstation">
-            </picture>
-          </li>
-          <li class="features__item feature">
-            <h4 class="feature__title">Мировые стандарты безопасности</h4>
-            <p class="feature__text">Выбирайте надежного брокера, который работает с&nbsp;клиентами более чем в&nbsp;83&nbsp;странах мира</p>
-            <svg class="feature__icon" width="30" height="32">
-              <use xlink:href="img/sprite.svg#shield"></use>
-            </svg>
-          </li>
-          <li class="features__item feature">
-            <h4 class="feature__title">150+ инструментов</h4>
-            <p class="feature__text">Forex, акции, фьючерсы, индексы, металлы&nbsp;и&nbsp;энергоресурсы</p>
-            <svg class="feature__icon" width="30" height="32">
-              <use xlink:href="img/sprite.svg#bars"></use>
-            </svg>
-          </li>
-          <li class="features__item feature">
-            <h4 class="feature__title">Мультиязычная поддержка 24/5</h4>
-            <p class="feature__text">Почувствуйте себя уверенно, зная, что наша служба поддержки доступна для вас в&nbsp;любое время дня и&nbsp;ночи, с&nbsp;понедельника по&nbsp;пятницу</p>
-            <svg class="feature__icon" width="30" height="32">
-              <use xlink:href="img/sprite.svg#headphones"></use>
-            </svg>
-          </li>
-        </ul>
+        <div class="features__slider swiper">
+          <ul class="features__list swiper-wrapper">
+            <li class="features__item feature swiper-slide">
+              <h4 class="feature__title">Сверхбыстрое исполнение и&nbsp;высокая ликвидность</h4>
+              <p class="feature__text">
+                99,9% ордеров исполняются<br>
+                менее чем за&nbsp;11.06&nbsp;мс</p>
+              <svg class="feature__icon" width="27" height="30">
+                <use xlink:href="img/sprite.svg#stopwatch"></use>
+              </svg>
+            </li>
+            <li class="features__item features__item--main feature feature--main swiper-slide">
+              <h4 class="feature__title">Типы счетов</h4>
+              <p class="feature__text">
+                Возможность торговать<br>
+                Mini, Standard, Classic и&nbsp;ProInvest счетами с&nbsp;одного&nbsp;устройства
+              </p>
+              <svg class="feature__icon" width="32" height="32">
+                <use xlink:href="img/sprite.svg#candles"></use>
+              </svg>
+              <picture>
+                <source type="image/webp" srcset="img/workstation.webp 1x, img/workstation@2x.webp 2x">
+                <img class="feature__main-pic" src="img/workstation.png" srcset="img/workstation@2x.png 2x" width="363" height="374" alt="workstation">
+              </picture>
+            </li>
+            <li class="features__item feature swiper-slide">
+              <h4 class="feature__title">Мировые стандарты безопасности</h4>
+              <p class="feature__text">Выбирайте надежного брокера, который работает с&nbsp;клиентами более чем в&nbsp;83&nbsp;странах мира</p>
+              <svg class="feature__icon" width="30" height="32">
+                <use xlink:href="img/sprite.svg#shield"></use>
+              </svg>
+            </li>
+            <li class="features__item feature swiper-slide">
+              <h4 class="feature__title">150+ инструментов</h4>
+              <p class="feature__text">Forex, акции, фьючерсы, индексы, металлы&nbsp;и&nbsp;энергоресурсы</p>
+              <svg class="feature__icon" width="30" height="32">
+                <use xlink:href="img/sprite.svg#bars"></use>
+              </svg>
+            </li>
+            <li class="features__item feature swiper-slide">
+              <h4 class="feature__title">Мультиязычная поддержка 24/5</h4>
+              <p class="feature__text">Почувствуйте себя уверенно, зная, что наша служба поддержки доступна для вас в&nbsp;любое время дня и&nbsp;ночи, с&nbsp;понедельника по&nbsp;пятницу</p>
+              <svg class="feature__icon" width="30" height="32">
+                <use xlink:href="img/sprite.svg#headphones"></use>
+              </svg>
+            </li>
+          </ul>
+          <div class="features__pagination swiper-pagination"></div>
+        </div>
       </div>
     </section>
 
@@ -125,7 +129,7 @@
       <div class="container devices__container">
         <div class="devices__content">
           <h3 class="page__section-heading devices__heading">Выберите свою платформу</h3>
-          <p class="devices__text">Переходите на&nbsp;новый уровень трейдинга с&nbsp;профессионально оснащенной платформой &laquo;United Brokers&raquo;. Доступны версии для&nbsp;ПК, веб и&nbsp;смартфонов.</p>
+          <p class="devices__text">Переходите на&nbsp;новый уровень трейдинга с&nbsp;профессионально оснащенной платформой &laquo;United Brokers&raquo;. Доступны версии для&nbsp;ПК, веб&nbsp;и&nbsp;смартфонов.</p>
           <a href="#" class="devices__button button">Подробнее</a>
         </div>
         <div class="devices__pic-wrapper">
