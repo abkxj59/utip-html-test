@@ -25,6 +25,7 @@
 .faq__header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .faq__question {
@@ -72,6 +73,8 @@
 
 .faq__answer {
   display: none;
+  line-height: 28px;
+  margin: 17px 0 10px;
 }
 
 .faq__item--opened .faq__answer {

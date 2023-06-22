@@ -5,13 +5,18 @@
 }
 
 .feature__title {
-  margin: 10px 0;
+  margin: 14px 0;
   font-weight: 600;
   font-size: 20px;
 }
 
+.feature:first-child .feature__title {
+  margin: 10px 0;
+}
+
 .feature__text {
   margin-top: 0;
+  // margin-bottom: 25px;
 }
 
 .feature__icon {
@@ -22,12 +27,12 @@
   position: relative;
 
   .feature__icon {
-    margin-top: 40px;
+    margin-top: 23px;
   }
 
   .feature__main-pic {
     position: absolute;
     bottom: 0;
-    right: 10%;
+    right: 12%;
   }
 }
