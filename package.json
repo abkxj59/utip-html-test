@@ -55,5 +55,7 @@
     "webpack-stream": "5.2.1",
     "bootstrap": "^5.2.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "swiper": "^9.4.1"
+  }
 }

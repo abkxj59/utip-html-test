@@ -5,6 +5,10 @@
   @include vp-1280 {
     flex-direction: column;
   }
+
+  @include vp-768 {
+    align-items: flex-start;
+  }
 }
 
 .apps__heading {
@@ -17,6 +21,11 @@
     line-height: 14px;
     margin: 7px 0;
   }
+
+  @include vp-768 {
+    font-size: 9px;
+    margin: 0 0 6px;
+  }
 }
 
 .apps__list {
@@ -28,6 +37,10 @@
   @include vp-1280 {
     margin: 0;
   }
+
+  @include vp-768 {
+    padding: 0;
+  }
 }
 
 .apps__item {
@@ -35,6 +48,10 @@
 
   @include vp-1280 {
     margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
@@ -59,5 +76,10 @@
     svg {
       width: 50%;
     }
+  }
+
+  @include vp-768 {
+    width: 38px;
+    height: 38px;
   }
 }

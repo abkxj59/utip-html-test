@@ -8,6 +8,11 @@
     grid-template-columns: 1fr 1fr;
     overflow: visible;
   }
+
+  @include vp-768 {
+    display: block;
+    padding-bottom: 276px;
+  }
 }
 
 .devices__content {
@@ -19,11 +24,19 @@
     margin-top: 0;
     margin-bottom: 20px;
   }
+
+  @include vp-768 {
+    margin-bottom: 50px;
+  }
 }
 
 .devices__heading {
   @include vp-1280 {
     margin-bottom: 4px;
+  }
+
+  @include vp-768 {
+    margin: 5px 0 12px;
   }
 }
 
@@ -35,6 +48,10 @@
     margin: 0 0 28px;
     line-height: 24px;
   }
+
+  @include vp-768 {
+    line-height: 16px;
+  }
 }
 
 .devices__pic-wrapper {
@@ -43,6 +60,11 @@
     left: 49%;
     height: 100%;
     overflow-x: visible;
+  }
+
+  @include vp-768 {
+    height: 276px;
+    left: 0;
   }
 }
 
@@ -56,5 +78,9 @@
     height: 100%;
     margin-right: -100px;
     z-index: 3;
+  }
+
+  @include vp-768 {
+    margin-left: 16px;
   }
 }

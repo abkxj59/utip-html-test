@@ -15,6 +15,10 @@
     flex-wrap: wrap;
     z-index: 3;
   }
+
+  @include vp-768 {
+    padding: 22px 16px 18px;
+  }
 }
 
 .header__logo {
@@ -28,6 +32,11 @@
 
   @include vp-1280 {
     width: 63px;
+  }
+
+  @include vp-768 {
+    width: 55px;
+    margin-right: 0;
   }
 }
 
@@ -82,6 +91,12 @@
   @include vp-1280 {
     display: block;
     order: -1;
+  }
+
+  @include vp-768 {
+    margin-top: -5px;
+    margin-right: 18px;
+    width: 29px
   }
 }
 
@@ -156,5 +171,9 @@
 
   @include vp-1280 {
     margin-right: -4px;
+  }
+
+  @include vp-768 {
+    margin-right: 0;
   }
 }

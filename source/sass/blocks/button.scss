@@ -17,4 +17,11 @@
   @include vp-1280 {
     padding: 8px 40px;
   }
+
+  @include vp-768 {
+    padding: 12px;
+    font-size: 14px;
+    line-height: 16px;
+    width: 100%;
+  }
 }

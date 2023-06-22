@@ -7,12 +7,12 @@ $color-default-white:    #ffffff;
 $color-transparent:      rgba(255, 255, 255, 0);
 
 // project
-$color-basic-black:      #2A2A2A;
+$color-basic-black:      #2a2a2a;
 $color-basic-blue:       #294570;
-$color-basic-cyan:       #1DAAB3;
-$color-dark-grey:        #D8D8D8;
-$color-basic-grey:       #A0A0A0;
-$color-background-grey:  #F4F4F4;
+$color-basic-cyan:       #1daab3;
+$color-dark-grey:        #d8d8d8;
+$color-basic-grey:       #a0a0a0;
+$color-background-grey:  #f4f4f4;
 
 
 // Typography
@@ -21,6 +21,7 @@ $color-background-grey:  #F4F4F4;
 // переменная используемая в html для подключения скейлинга
 $fz-default:                        16px;
 $fz-tablet:                         14px;
+$fz-mobile:                         12px;
 
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13

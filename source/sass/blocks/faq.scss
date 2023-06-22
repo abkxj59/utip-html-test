@@ -1,3 +1,17 @@
+.faq {
+  @include vp-768 {
+    padding-bottom: 29px;
+  }
+}
+
+.faq__heading {
+  @include vp-768 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
 .faq__list {
   list-style: none;
   background-color: $color-default-white;
@@ -7,6 +21,10 @@
   @include vp-1280 {
     margin-right: -5px;
     margin-bottom: 20px;
+  }
+
+  @include vp-768 {
+    margin-right: 0;
   }
 }
 
@@ -34,6 +52,10 @@
   @include vp-1280 {
     padding: 30px;
   }
+
+  @include vp-768 {
+    padding: 20px 10px;
+  }
 }
 
 .faq__header {
@@ -51,6 +73,12 @@
   @include vp-1280 {
     font-size: 18px;
     line-height: 32px;
+  }
+
+  @include vp-768 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-right: 15px;
   }
 }
 
@@ -81,6 +109,21 @@
     height: 18px;
     background-color: $color-basic-grey;
   }
+
+  @include vp-768 {
+    width: 20px;
+    height: 20px;
+
+    &::before {
+      width: 12px;
+      height: 1.5px;
+    }
+
+    &::after {
+      width: 1.5px;
+      height: 12px;
+    }
+  }
 }
 
 .faq__item--opened .faq__checkbox::after {
@@ -94,10 +137,15 @@
 .faq__answer {
   display: none;
   line-height: 28px;
-  margin: 17px 0 10px;
+  margin: 17px 0 12px;
 
   @include vp-1280 {
     margin: 42px 0 10px;
+  }
+
+  @include vp-768 {
+    margin: 10px 0 -10px;
+    line-height: 16px;
   }
 }
 

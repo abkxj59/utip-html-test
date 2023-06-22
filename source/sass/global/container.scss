@@ -6,4 +6,8 @@
   @include vp-1280 {
     padding: 0 125px;
   }
+
+  @include vp-768 {
+    padding: 0 16px;
+  }
 }

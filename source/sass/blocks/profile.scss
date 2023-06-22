@@ -95,4 +95,7 @@
   @include vp-1280 {
     padding: 7px 25px;
   }
+  @include vp-768 {
+    padding: 8px 16px;
+  }
 }

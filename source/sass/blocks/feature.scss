@@ -1,10 +1,15 @@
 .feature {
   padding: 44px 32px 34px;
-  display: flex;
+  display: flex !important;
   flex-direction: column;
+  background-color: $color-default-white;
 
   @include vp-1280 {
     padding: 20px;
+  }
+
+  @include vp-768 {
+    padding: 20px 18px;
   }
 }
 
@@ -16,6 +21,11 @@
   @include vp-1280 {
     margin: 4px 0 6px;
     font-size: 16px;
+  }
+
+  @include vp-768 {
+    margin: 7px 0 12px;
+    font-size: 14px;
   }
 }
 
@@ -41,8 +51,12 @@
   @include vp-1280 {
     margin-top: 0;
     order: -1;
-    // width: 22px;
     height: 26px;
+  }
+
+  @include vp-768 {
+    order: -1;
+    width: 18px;
   }
 }
 
@@ -51,6 +65,12 @@
 
   @include vp-1280 {
     padding-right: 50%;
+  }
+
+  .feature__text {
+    @include vp-768 {
+      padding-right: 20px;
+    }
   }
 
   .feature__icon {
@@ -66,11 +86,19 @@
   position: absolute;
   bottom: 0;
   right: 12%;
+  z-index: -1;
 
   @include vp-1280 {
     object-fit: contain;
+    object-position: bottom;
     width: 220px;
     height: 200px;
     right: 20px;
+  }
+
+  @include vp-768 {
+    width: 142px;
+    height: 133px;
+    right: 5px;
   }
 }
