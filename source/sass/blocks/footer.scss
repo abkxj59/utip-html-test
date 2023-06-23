@@ -45,7 +45,6 @@
     width: 51px;
     align-self: center;
   }
-
 }
 
 .footer__apps {
@@ -215,7 +214,6 @@
       height: 1px;
       background-color: rgba(#d0d0d0, 0.35);
     }
-
   }
 }
 
@@ -225,6 +223,7 @@
   @include vp-1280 {
     margin-bottom: 10px;
   }
+
   @include vp-768 {
     margin-bottom: 11px;
   }

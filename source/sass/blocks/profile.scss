@@ -22,7 +22,6 @@
 
   @include hover-focus {
     border: 1.5px solid rgba($color-basic-cyan, 0.7);
-
   }
 
   &--opened {
@@ -95,6 +94,7 @@
   @include vp-1280 {
     padding: 7px 25px;
   }
+
   @include vp-768 {
     padding: 8px 16px;
   }
