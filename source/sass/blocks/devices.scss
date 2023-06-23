@@ -1,3 +1,7 @@
+.devices {
+  overflow: hidden;
+}
+
 .devices__container {
   display: grid;
   grid-template-columns: 2fr 3fr;
@@ -58,12 +62,12 @@
   @include vp-1280 {
     position: absolute;
     left: 49%;
-    height: 100%;
-    overflow-x: visible;
+    overflow: visible;
+    height: 276px;
+    width: 100%;
   }
 
   @include vp-768 {
-    height: 276px;
     left: 0;
   }
 }
@@ -81,6 +85,8 @@
   }
 
   @include vp-768 {
-    margin-left: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
   }
 }

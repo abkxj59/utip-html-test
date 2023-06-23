@@ -978,6 +978,10 @@ button,
   right: 12%;
 }
 
+.devices {
+  overflow: hidden;
+}
+
 .devices__container {
   display: -ms-grid;
   display: grid;
@@ -1109,6 +1113,7 @@ button,
 }
 
 .footer {
+  overflow: hidden;
   background-color: #294570;
   color: #ffffff;
   padding: 76px 0;
@@ -1533,8 +1538,9 @@ button,
   .devices__pic-wrapper {
     position: absolute;
     left: 49%;
-    height: 100%;
-    overflow-x: visible;
+    overflow: visible;
+    height: 276px;
+    width: 100%;
   }
 
   .devices__pic {
@@ -1746,6 +1752,7 @@ button,
 
   .market__coin {
     position: static;
+    margin: 0 auto;
   }
 
   .market__button {
@@ -1831,12 +1838,13 @@ button,
   }
 
   .devices__pic-wrapper {
-    height: 276px;
     left: 0;
   }
 
   .devices__pic {
-    margin-left: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
   }
 
   .faq {
