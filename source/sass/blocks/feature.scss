@@ -86,7 +86,6 @@
   position: absolute;
   bottom: 0;
   right: 12%;
-  z-index: -1;
 
   @include vp-1280 {
     object-fit: contain;

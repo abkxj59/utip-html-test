@@ -976,7 +976,6 @@ button,
   position: absolute;
   bottom: 0;
   right: 12%;
-  z-index: -1;
 }
 
 .devices__container {
